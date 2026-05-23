@@ -21,3 +21,18 @@ if (menuToggle && navMenu) {
         });
     });
 }
+
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const description = document.getElementById('description').value;
+
+        if (name && email && description) {
+            alert(`Obrigado, ${name}! Sua mensagem foi recebida em ${email}`);
+            contactForm.reset();
+        }
+    });
+}
