@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Over - Loja Gamer</title>
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-content">
+            <img src="src/assets/logo.png" alt="Game Over Logo" class="splash-logo">
+            <p class="splash-tagline">Seu Mundo Gamer Começa Aqui</p>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-nav">
+                <img src="src/assets/logo.png" alt="Game Over" class="logo-img">
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pages/portifolio.html" class="nav-link">Portfólio</a></li>
+                <li><a href="pages/sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="pages/contato.html" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content">
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">BEM-VINDO AO GAME OVER</h2>
+                <p class="hero-subtitle">Equipamentos, Jogos e Acessórios para Gamers de Verdade</p>
+                <a href="pages/portifolio.html" class="hero-btn">Explorar Loja</a>
+            </div>
+            <div class="hero-image">
+                <img src="./src/assets/logo.png" alt="Logo Game Over" class="hero-logo">
+            </div>
+        </div>
+
+        <!-- Destaque -->
+        <section class="highlights">
+            <div class="highlight-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Produtos Premium</h3>
+                <p>Marcas top do mercado</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-truck"></i>
+                <h3>Entrega Rápida</h3>
+                <p>Em 24h para SP</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Garantia Total</h3>
+                <p>Proteção de 2 anos</p>
+            </div>
+        </section>
+
+        <!-- Galeria de Setups -->
+        <section class="gallery-section">
+            <div class="gallery-header">
+                <h2>Setups Incríveis</h2>
+                <p>Inspire-se para montar o seu</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--large">
+                    <img src="src/assets/img01.jpg" alt="Setup Gamer">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Setup RGB</span>
+                        <p>O setup dos sonhos</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="src/assets/img02.jpg" alt="Setup Gamer">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Setup Minimalista</span>
+                        <p>Clean e poderoso</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="src/assets/img03.jpg" alt="Setup Gamer">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Setup Pro</span>
+                        <p>Produtividade máxima</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Game Over</h4>
+                <p>Sua loja gamer de confiança</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (11) 99999-8888</p>
+                <p>✉️ contato@gameover.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Game Over. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
 </body>
 </html>

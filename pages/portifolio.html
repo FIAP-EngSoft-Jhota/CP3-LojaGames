@@ -1,11 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Over - Portfólio</title>
+    <link rel="stylesheet" href="../src/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-nav">
+                <img src="../src/assets/logo.png" alt="Game Over" class="logo-img">
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="portifolio.html" class="nav-link active">Portfólio</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content">
+
+        <div class="page-header">
+            <h2>Nossos Produtos</h2>
+            <p>Confira os melhores itens para seu setup</p>
+        </div>
+
+        <!-- Cards de Produtos -->
+        <div class="products-grid">
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../src/assets/eldenring.jpg" alt="Elden Ring">
+                </div>
+                <h3>Elden Ring</h3>
+                <p class="product-category">Jogo</p>
+                <div class="price-section">
+                    <span class="price">R$ 189,90</span>
+                    <span class="old-price">R$ 249,90</span>
+                </div>
+                <button class="add-cart-btn">Adicionar</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../src/assets/teclado.jpg" alt="Teclado Mecânico RGB">
+                </div>
+                <h3>Teclado Mecânico RGB</h3>
+                <p class="product-category">Periférico</p>
+                <div class="price-section">
+                    <span class="price">R$ 299,90</span>
+                    <span class="old-price">R$ 399,90</span>
+                </div>
+                <button class="add-cart-btn">Adicionar</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../src/assets/mouse.jpg" alt="Mouse Gamer Pro">
+                </div>
+                <h3>Mouse Gamer Pro</h3>
+                <p class="product-category">Periférico</p>
+                <div class="price-section">
+                    <span class="price">R$ 159,90</span>
+                    <span class="old-price">R$ 199,90</span>
+                </div>
+                <button class="add-cart-btn">Adicionar</button>
+            </div>
+
+            <div class="product-card promo">
+                <div class="promo-badge">-40%</div>
+                <div class="product-image">
+                    <img src="../src/assets/headset.jpg" alt="Headset Wireless">
+                </div>
+                <h3>Headset Wireless</h3>
+                <p class="product-category">Áudio</p>
+                <div class="price-section">
+                    <span class="price">R$ 199,90</span>
+                    <span class="old-price">R$ 329,90</span>
+                </div>
+                <button class="add-cart-btn">Adicionar</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../src/assets/monitor.jpg" alt="Monitor 144Hz">
+                </div>
+                <h3>Monitor 144Hz</h3>
+                <p class="product-category">Monitor</p>
+                <div class="price-section">
+                    <span class="price">R$ 899,90</span>
+                    <span class="old-price">R$ 1.199,90</span>
+                </div>
+                <button class="add-cart-btn">Adicionar</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../src/assets/controle.jpg" alt="Controle Gamer">
+                </div>
+                <h3>Controle Gamer</h3>
+                <p class="product-category">Controle</p>
+                <div class="price-section">
+                    <span class="price">R$ 179,90</span>
+                    <span class="old-price">R$ 239,90</span>
+                </div>
+                <button class="add-cart-btn">Adicionar</button>
+            </div>
+
+        </div>
+
+        <!-- Tabela de Preços -->
+        <div class="pricing-section">
+            <h2>Planos Disponíveis</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Acesso</th>
+                        <th>Benefícios</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starter</td>
+                        <td>1 Mês</td>
+                        <td>Descontos 5%, Frete Grátis</td>
+                        <td>R$ 9,90</td>
+                    </tr>
+                    <tr class="promo-row">
+                        <td>Pro</td>
+                        <td>3 Meses</td>
+                        <td>Descontos 15%, Frete Grátis, Suporte VIP</td>
+                        <td>R$ 24,90</td>
+                    </tr>
+                    <tr>
+                        <td>Ultra</td>
+                        <td>12 Meses</td>
+                        <td>Descontos 25%, Frete Grátis, Suporte VIP, Brinde</td>
+                        <td>R$ 79,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Game Over</h4>
+                <p>Sua loja gamer de confiança</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (11) 99999-8888</p>
+                <p>✉️ contato@gameover.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Game Over. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
 </body>
 </html>
