@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-main: #7C3AED;
+    --purple-light: #A78BFA;
+    --purple-dark: #5B21B6;
+    --gray-light: #E5E7EB;
+    --gray-dark: #1F2937;
+    --black: #000000;
+    --white: #FFFFFF;
+    --accent: #06B6D4;
+}
