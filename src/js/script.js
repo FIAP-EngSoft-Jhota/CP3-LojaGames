@@ -51,3 +51,21 @@ document.querySelectorAll('.add-cart-btn').forEach(btn => {
         }, 2000);
     });
 });
+
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.animation = 'pageIn 0.5s ease-out forwards';
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.product-card, .highlight-card, .info-card').forEach(el => {
+    observer.observe(el);
+});
