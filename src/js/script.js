@@ -36,3 +36,18 @@ if (contactForm) {
         }
     });
 }
+
+document.querySelectorAll('.add-cart-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const card = e.target.closest('.product-card');
+        const productName = card.querySelector('h3').textContent;
+
+        e.target.textContent = '✓ Adicionado!';
+        e.target.style.background = 'linear-gradient(135deg, #06B6D4, #7C3AED)';
+
+        setTimeout(() => {
+            e.target.textContent = 'Adicionar';
+            e.target.style.background = '';
+        }, 2000);
+    });
+});
