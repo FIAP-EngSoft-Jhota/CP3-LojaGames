@@ -69,3 +69,12 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.product-card, .highlight-card, .info-card').forEach(el => {
     observer.observe(el);
 });
+
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes pageIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+`;
+document.head.appendChild(style);
